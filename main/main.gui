@@ -1,6 +1,6 @@
 fonts {
   name: "main"
-  font: "/main/main.font"
+  font: "/fonts/main.font"
 }
 nodes {
   position {
@@ -58,9 +58,9 @@ nodes {
     y: 100.0
   }
   type: TYPE_TEXT
-  text: "CH"
+  text: "RU"
   font: "main"
-  id: "lang/ch/lbl1"
+  id: "lang/ru/lbl"
   parent: "lang/ru"
   inherit_alpha: true
 }

@@ -2,6 +2,8 @@
 
 This is example how to use google sheet table for localization.
 
+Localization support plurals and placeholders.
+
 1. You will need credentials.json to download from google sheets.
 [Make credentials](docs/credentials.md)
 
@@ -51,4 +53,9 @@ You will have 6 files.
 	symbol_list.txt
 	symbol_list_small.txt
 
-5.
+5. Google sheets localization
+(https://docs.google.com/spreadsheets/d/1BUmB7w0f4RVaqfJtRp3ix_3HKL0V5Izu-I9MB9NhCX4/edit#gid=0)[Example spreadsheet]
+
+//todo add image
+
+6. 

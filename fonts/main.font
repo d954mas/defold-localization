@@ -1,0 +1,5 @@
+font: "/fonts/LilitaOne-Russian.ttf"
+material: "/builtins/fonts/font-df.material"
+size: 32
+output_format: TYPE_DISTANCE_FIELD
+characters: "\"0123456789.,!+-RUCHENey frindtsoaglhm\320\255\320\271\320\264\321\200\321\203\320\263\321\201\320\265\320\276\320\275\321\217\320\272\320\270\320\261\321\211uj\'\303\247c\303\250Fp\303\261\""
