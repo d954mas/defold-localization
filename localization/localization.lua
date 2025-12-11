@@ -48,7 +48,6 @@ end
 function M:on_font_loaded(font_all)
 	self.font_all = assert(font_all)
 	I18N.load(self.config_all)
-	pprint(self.config_all)
     --add delay to fix some font not changed it metrics
 	--timer.delay(0.1, false, function ()
 	--	EVENTS.LANGUAGE_CHANGED:trigger()
