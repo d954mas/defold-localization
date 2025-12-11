@@ -17,4 +17,5 @@ scale_mode = stretch
 
 [project]
 title = defold-localization
+custom_resources = custom
 

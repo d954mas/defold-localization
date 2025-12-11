@@ -1,10 +1,26 @@
 name: "main"
+instances {
+  id: "check_font"
+  prototype: "/localization/check_font.go"
+  component_properties {
+    id: "check_font"
+    properties {
+      id: "target_gui"
+      value: "/go#main"
+      type: PROPERTY_TYPE_URL
+    }
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "go"
   data: "components {\n"
   "  id: \"main\"\n"
   "  component: \"/main/main.gui\"\n"
+  "}\n"
+  "components {\n"
+  "  id: \"fonts\"\n"
+  "  component: \"/main/fonts.script\"\n"
   "}\n"
   ""
 }

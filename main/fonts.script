@@ -1,0 +1,12 @@
+local LOCALIZATION = require "localization.localization"
+
+go.property("main_all", resource.font("/fonts/main_all.font"))
+go.property("main", resource.font("/fonts/main.font"))
+
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("load_font") and not LOCALIZATION.font_all then
+		LOCALIZATION:on_font_loaded(self.main_all)
+		msg.post("/go#main", "language_changed")
+	end
+end
