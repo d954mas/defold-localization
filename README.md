@@ -4,6 +4,8 @@ This is example how to use google sheet table for localization.
 
 Localization support plurals and placeholders.
 
+Example use 2 fonts. One for all languages and one for set of languages without chinese, japanese and korean. You can run game with small font and use liveupdate to download full font.
+
 1. You will need credentials.json to download from google sheets.
 [Make credentials](docs/credentials.md)
 

@@ -111,5 +111,60 @@ nodes {
   line_break: true
   inherit_alpha: true
 }
+nodes {
+  position {
+    x: 81.0
+    y: 332.0
+  }
+  size {
+    x: 125.0
+    y: 50.0
+  }
+  color {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  id: "btn/load_font"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  scale {
+    x: 0.5
+    y: 0.5
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "LOAD FONT"
+  font: "main"
+  id: "btn/load_font/lbl"
+  parent: "btn/load_font"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 163.0
+    y: 333.0
+  }
+  scale {
+    x: 0.85
+    y: 0.85
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "font not loaded"
+  font: "main"
+  id: "load_font_status"
+  pivot: PIVOT_W
+  inherit_alpha: true
+}
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
