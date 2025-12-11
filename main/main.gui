@@ -167,5 +167,119 @@ nodes {
   pivot: PIVOT_W
   inherit_alpha: true
 }
+nodes {
+  position {
+    x: 845.0
+    y: 371.0
+  }
+  scale {
+    x: 0.55
+    y: 0.55
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Messages 0"
+  font: "main"
+  id: "msg_zero"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 845.0
+    y: 341.0
+  }
+  scale {
+    x: 0.55
+    y: 0.55
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Messages 0"
+  font: "main"
+  id: "msg_one"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 845.0
+    y: 311.0
+  }
+  scale {
+    x: 0.55
+    y: 0.55
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Messages 0"
+  font: "main"
+  id: "msg_two"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 845.0
+    y: 281.0
+  }
+  scale {
+    x: 0.55
+    y: 0.55
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Messages 0"
+  font: "main"
+  id: "msg_few"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 845.0
+    y: 251.0
+  }
+  scale {
+    x: 0.55
+    y: 0.55
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Messages 0"
+  font: "main"
+  id: "msg_many"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 845.0
+    y: 221.0
+  }
+  scale {
+    x: 0.55
+    y: 0.55
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "s"
+  font: "main"
+  id: "msg_other"
+  inherit_alpha: true
+}
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

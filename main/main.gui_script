@@ -6,6 +6,12 @@ local function on_language_changed(self)
 	local test_locale = LOCALIZATION:translate("test_locale", {language = language_str, date = date_str})
 	gui.set_text(gui.get_node("title"), test_locale)
 	gui.set_text(gui.get_node("load_font_status"), LOCALIZATION.font_all and "font loaded" or "font not loaded")
+	gui.set_text(gui.get_node("msg_zero"), LOCALIZATION:translate("messages", {count = 0}))
+	gui.set_text(gui.get_node("msg_one"), LOCALIZATION:translate("messages", {count = 1}))
+	gui.set_text(gui.get_node("msg_two"), LOCALIZATION:translate("messages", {count = 2}))
+	gui.set_text(gui.get_node("msg_few"), LOCALIZATION:translate("messages", {count = 5}))
+	gui.set_text(gui.get_node("msg_many"), LOCALIZATION:translate("messages", {count = 10}))
+	gui.set_text(gui.get_node("msg_other"), LOCALIZATION:translate("messages", {count = 20}))
 end
 
 function init(self)
