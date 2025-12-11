@@ -6,6 +6,12 @@ Localization support plurals and placeholders.
 
 Example use 2 fonts. One for all languages and one for set of languages without chinese, japanese and korean. You can run game with small font and use liveupdate to download full font.
 
+<img src="docs/locale_en.png" width="400" />
+<img src="docs/locale_ch.png" width="400" />
+
+## How to use
+
+
 1. You will need credentials.json to download from google sheets.
 [Make credentials](docs/credentials.md)
 
@@ -58,6 +64,8 @@ You will have 6 files.
 5. Google sheets localization
 (https://docs.google.com/spreadsheets/d/1BUmB7w0f4RVaqfJtRp3ix_3HKL0V5Izu-I9MB9NhCX4/edit#gid=0)[Example spreadsheet]
 
+![](docs/google_sheets.png)
+
 //todo add image
 
 6. Add localization_compact.json to custom resources
@@ -65,6 +73,7 @@ You will have 6 files.
 7. Use localization in your game. Look in localization.lua and main.gui_script for example.
 
 ```lua
+--localization.lua
 local I18N = require "localization.i18n.init"
 
 local TAG = "[LOCALIZATION]"
@@ -123,5 +132,19 @@ end
 
 return M
 
+--main.gui_script
+local function on_language_changed(self)
+	local language_str = LOCALIZATION:translate("language")
+	local date_str = os.date("%d.%m.%Y")
+	local test_locale = LOCALIZATION:translate("test_locale", {language = language_str, date = date_str})
+	gui.set_text(gui.get_node("title"), test_locale)
+	gui.set_text(gui.get_node("load_font_status"), LOCALIZATION.font_all and "font loaded" or "font not loaded")
+	gui.set_text(gui.get_node("msg_zero"), LOCALIZATION:translate("messages", {count = 0}))
+	gui.set_text(gui.get_node("msg_one"), LOCALIZATION:translate("messages", {count = 1}))
+	gui.set_text(gui.get_node("msg_two"), LOCALIZATION:translate("messages", {count = 2}))
+	gui.set_text(gui.get_node("msg_few"), LOCALIZATION:translate("messages", {count = 5}))
+	gui.set_text(gui.get_node("msg_many"), LOCALIZATION:translate("messages", {count = 10}))
+	gui.set_text(gui.get_node("msg_other"), LOCALIZATION:translate("messages", {count = 20}))
+end
 ```
 
