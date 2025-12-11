@@ -62,11 +62,9 @@ You will have 6 files.
 	symbol_list_small.txt
 
 5. Google sheets localization
-(https://docs.google.com/spreadsheets/d/1BUmB7w0f4RVaqfJtRp3ix_3HKL0V5Izu-I9MB9NhCX4/edit#gid=0)[Example spreadsheet]
+[Example spreadsheet](https://docs.google.com/spreadsheets/d/1BUmB7w0f4RVaqfJtRp3ix_3HKL0V5Izu-I9MB9NhCX4/edit#gid=0)
 
 ![](docs/google_sheets.png)
-
-//todo add image
 
 6. Add localization_compact.json to custom resources
 
