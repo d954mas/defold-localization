@@ -1,0 +1,84 @@
+fonts {
+  name: "main"
+  font: "/main/main.font"
+}
+nodes {
+  position {
+    x: 380.0
+    y: 76.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  color {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  id: "lang/en"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "ENG"
+  font: "main"
+  id: "lang/en/lbl"
+  parent: "lang/en"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 580.0
+    y: 76.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  color {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  id: "lang/ch"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "CH"
+  font: "main"
+  id: "lang/ch/lbl"
+  parent: "lang/ch"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 507.0
+    y: 461.0
+  }
+  size {
+    x: 600.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Hey english friend it is 11.12.2025 today"
+  font: "main"
+  id: "text"
+  line_break: true
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

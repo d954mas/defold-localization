@@ -1,0 +1,16 @@
+/.editor_settings
+/.internal
+/build
+.externalToolBuilders
+.DS_Store
+Thumbs.db
+.lock-wscript
+*.pyc
+.project
+.cproject
+builtins
+/localization/load_localization/node_modules
+/localization/load_localization/package-lock.json
+/localization/load_localization/token.json
+/localization/load_localization/credentials.json
+/localization/load_localization/localization/**
