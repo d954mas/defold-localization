@@ -4,7 +4,7 @@ fonts {
 }
 nodes {
   position {
-    x: 380.0
+    x: 330.0
     y: 76.0
   }
   size {
@@ -35,7 +35,38 @@ nodes {
 }
 nodes {
   position {
-    x: 580.0
+    x: 480.0
+    y: 76.0
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  color {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  id: "lang/ru"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "CH"
+  font: "main"
+  id: "lang/ch/lbl1"
+  parent: "lang/ru"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 630.0
     y: 76.0
   }
   size {
@@ -76,7 +107,7 @@ nodes {
   type: TYPE_TEXT
   text: "Hey english friend it is 11.12.2025 today"
   font: "main"
-  id: "text"
+  id: "title"
   line_break: true
   inherit_alpha: true
 }

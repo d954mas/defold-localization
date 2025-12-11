@@ -84,9 +84,19 @@ function save_file(data,path){
     });
 }
 
-async function download_localization(sheets, auth, spreadsheetId) {
+function save_file_string(data,path){
+    fs.writeFile(path, data, (err) => {
+        if (err) {
+            console.log(err);
+            throw(err);
+        } else {
+            console.log("File saved:" + path);
+        }
+    });
+}
+
+async function download_localization(sheets, range, auth, spreadsheetId) {
     console.log("****** LOCALIZATION PARSE BEGIN ******");
-    let range = "localization!A8:L1000";  // Assume data goes up to column Z for future languages
     let rows = await gdoc.get(sheets, auth, spreadsheetId, range);
     let headers = rows[0];
     let result = {};
@@ -133,7 +143,7 @@ async function main(auth) {
 	//https://docs.google.com/spreadsheets/d/1BUmB7w0f4RVaqfJtRp3ix_3HKL0V5Izu-I9MB9NhCX4
     const config_sheet = "1BUmB7w0f4RVaqfJtRp3ix_3HKL0V5Izu-I9MB9NhCX4"
 
-    let localization = await download_localization(sheets, auth, config_sheet);
+    let localization = await download_localization(sheets, "localization!A8:L1000", auth, config_sheet);
     let symbols_list_all = await prepare_symbols_file(localization)
 	//exclude chinese japanese and korean symbols
     let symbols_list_small = await prepare_symbols_file(localization,['zh', 'ja', 'ko'])
@@ -162,8 +172,8 @@ async function main(auth) {
     save_file(output,"./localization/localization_compact.json")
     save_file(symbols_list_all,"./localization/symbol_list.txt")
     save_file(symbols_list_small,"./localization/symbol_list_small.txt")
-	save_file(font_forge_all, "localization/font_forge_all.txt")
-	save_file(font_forge_small, "localization/font_forge_small.txt")
+	save_file_string(font_forge_all, "localization/font_forge_all.txt")
+	save_file_string(font_forge_small, "localization/font_forge_small.txt")
 
     console.log("finish");
 
